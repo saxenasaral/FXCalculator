@@ -8,7 +8,7 @@ import com.anz.fxcal.config.FxContext;
 @Component
 public class InputValidation {
 
-	public void validate(String input) {
+	public boolean validate(String input) {
 		String base = "";
 		String term = "";
 		try {
@@ -35,5 +35,6 @@ public class InputValidation {
 		} catch (Exception e) {
 			throw new RuntimeException();
 		}
+		return true;
 	}
 }
